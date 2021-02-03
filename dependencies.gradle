@@ -1,0 +1,14 @@
+ext {
+    // Android
+    minSdkVersion = 17
+    targetSdkVersion = 30
+    compileSdkVersion = 30
+    versionCode = 1
+    versionName = "1.0"
+    testInstrumentationRunner =  "androidx.test.runner.AndroidJUnitRunner"
+    androidxAppcompatLibVersion = '1.2.0'
+    lifecycle_version = "2.2.0"
+    room_version = "2.2.6"
+     // Testing
+    junit = "junit:junit:4.12"
+ }

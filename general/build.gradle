@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    }
+    dependencies {
+        classpath "com.jakewharton:butterknife-gradle-plugin:$butterknife"
+     }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        testInstrumentationRunner   rootProject.ext.testInstrumentationRunner
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+}
+
+ dependencies {
+     implementation "androidx.appcompat:appcompat:$androidxAppcompatLibVersion"
+     api "com.jakewharton:butterknife:$butterknife"
+     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife"
+     implementation "com.google.dagger:hilt-android:$hilt_version"
+     api 'androidx.recyclerview:recyclerview:1.1.0'
+ }

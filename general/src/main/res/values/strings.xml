@@ -1,0 +1,5 @@
+<resources>
+     <string name="wait">please wait</string>
+     <string name="no_internet_connection">No Internet Connection</string>
+     <string name="response_error">error happened</string>
+</resources>
