@@ -54,7 +54,7 @@ public class DataManager implements RetrofitApiError {
     CustomProgressBar customProgressBar;
 
     // error if use this constructor
-   // @Inject
+//    @Inject
 //    public DataManager( ) {
 //        retrofitApiHelper.setRetrofitApiError(this);
 //    }

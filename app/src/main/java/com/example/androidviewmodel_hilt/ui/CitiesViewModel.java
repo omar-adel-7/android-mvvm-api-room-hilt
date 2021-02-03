@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
-import com.example.androidviewmodel_hilt.data.Remote.Retrofit.RetrofitApiHelper;
 import com.example.androidviewmodel_hilt.data.Repositories.CitiesRepository;
 import com.example.androidviewmodel_hilt.data.beans.CitiesResponse;
 
@@ -26,13 +25,11 @@ public class CitiesViewModel extends AndroidViewModel  {
                            // @Inject CitiesRepository citiesRepository;
                            // and then it goes into any dependency here and also call constructor of  any injected dependency in it
                            , CitiesRepository citiesRepository
-              , RetrofitApiHelper retrofitApiHelper
       ) {
         super(application);
          this.citiesRepository= citiesRepository;
       }
 
-      // comment it
     // @Inject
     CitiesRepository citiesRepository;
     public LiveData<CitiesResponse> getCities(AppCompatActivity appCompatActivity  , boolean hasCache ) {
